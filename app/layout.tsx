@@ -7,6 +7,7 @@ import { Montserrat, Space_Grotesk } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { ScrollProgressBar } from "@/components/scroll-animations"
 import { Metadata } from "next"
+import { MobileNotice } from "@/components/mobile-notice"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <ScrollProgressBar />
             <Navbar />
+            <MobileNotice />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
