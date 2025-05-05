@@ -8,10 +8,13 @@ import { EnhancedParallax } from "@/components/enhanced-parallax"
 import { ScrollAnimation, StaggerContainer, TiltCard } from "@/components/scroll-animations"
 import { FAQSection } from "@/components/faq-section"
 import { Award, Code, Cpu, Database, FileCheck, Lightbulb, Rocket, Smartphone, Star, Users, Zap } from "lucide-react"
+import { useTheme } from "next-themes"
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null)
   const [scrollY, setScrollY] = useState(0)
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +22,7 @@ export default function Home() {
     }
 
     window.addEventListener("scroll", handleScroll)
+    setMounted(true)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -34,8 +38,18 @@ export default function Home() {
             transform: `scale(${Math.max(1 - scrollY / 2000, 0.8)})`,
           }}
         >
-          <div className="mb-6 w-24 h-24 relative mx-auto">
-            <Image src="/network-icon.png" alt="LEAAS Network Icon" width={96} height={96} className="w-full h-auto" />
+          <div className="mb-6 w-32 h-auto relative mx-auto">
+            {mounted ? (
+              <Image 
+                src={resolvedTheme === "dark" ? "/dark-mode-logo.png" : "/logo-light-mode.png"} 
+                alt="LEAAS Logo" 
+                width={150} 
+                height={75} 
+                className="w-full h-auto" 
+              />
+            ) : (
+              <div className="h-16 w-32 bg-muted rounded animate-pulse"></div>
+            )}
           </div>
           <h1 className="mega-text gradient-text mb-6">
             LAUNCH

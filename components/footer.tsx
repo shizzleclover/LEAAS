@@ -1,14 +1,38 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
+import { useTheme } from "next-themes"
+import { useEffect, useState } from "react"
 
 export function Footer() {
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  
   return (
     <footer className="bg-muted py-12 border-t">
       <div className="container grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold">LEAAS</h3>
+          <div className="flex items-center space-x-2">
+            {mounted ? (
+              <Image 
+                src={resolvedTheme === "dark" ? "/dark-mode-logo.png" : "/logo-light-mode.png"}
+                alt="LEAAS Logo" 
+                width={100} 
+                height={40} 
+                className="h-8 w-auto" 
+              />
+            ) : (
+              <div className="h-8 w-24 bg-muted-foreground/20 rounded animate-pulse"></div>
+            )}
+          </div>
           <p className="text-muted-foreground">
             From idea to launch — we help you build innovative products with clean code while providing expert guidance along the way.
           </p>

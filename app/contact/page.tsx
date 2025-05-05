@@ -128,7 +128,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Email</h3>
-                    <p className="text-muted-foreground">info@leaas.com</p>
+                    <p className="text-muted-foreground">murewatajala@gmail.com</p>
                     <p className="text-muted-foreground">support@leaas.com</p>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Phone</h3>
-                    <p className="text-muted-foreground">+234 123 456 7890</p>
+                    <p className="text-muted-foreground">+234 901 299 5866</p>
                     <p className="text-muted-foreground">+234 987 654 3210</p>
                   </div>
                 </div>

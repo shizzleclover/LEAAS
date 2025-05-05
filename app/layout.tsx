@@ -21,6 +21,10 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "LEAAS - Launch Engine as a Service",
   description: "Transform your ideas into market-ready products with expert guidance and collaborative development.",
+  icons: {
+    icon: '/dark-mode-logo.png',
+    apple: '/dark-mode-logo.png',
+  },
 }
 
 export default function RootLayout({

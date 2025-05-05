@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       port: 465,
       secure: true, // use SSL
       auth: {
-        user: 'murewatajala@gmail.com',
+        user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_APP_PASSWORD, // App password stored in environment variable
       },
     });

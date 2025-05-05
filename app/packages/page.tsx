@@ -23,7 +23,7 @@ const packages = [
   {
     name: "Starter Kit",
     emoji: "🚀",
-    price: "₦170,000",
+    price: "₦199,000",
     description: "Basic project implementation for simple requirements.",
     features: [
       { name: "Project Scoping & Ideation", value: "1 session", icon: <Layers className="h-5 w-5" /> },
@@ -43,7 +43,7 @@ const packages = [
   {
     name: "Pro Build",
     emoji: "⭐",
-    price: "300,000",
+    price: "₦349,000",
     description: "Comprehensive solution for standard projects with collaborative development.",
     features: [
       { name: "Project Scoping & Ideation", value: "2 sessions", icon: <Layers className="h-5 w-5" /> },
@@ -68,7 +68,7 @@ const packages = [
   {
     name: "Premium Launch",
     emoji: "💎",
-    price: "470,000",
+    price: "₦499,000",
     description: "Advanced solution for complex projects with in-depth knowledge transfer.",
     features: [
       { name: "Project Scoping & Ideation", value: "Unlimited strategic calls", icon: <Layers className="h-5 w-5" /> },
