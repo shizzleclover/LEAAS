@@ -128,7 +128,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Email</h3>
-                    <p className="text-muted-foreground">murewatajala@gmail.com</p>
+                    <p className="text-muted-foreground">fluxxappmail@gmail.com</p>
                     <p className="text-muted-foreground">support@leaas.com</p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg">Phone</h3>
                     <p className="text-muted-foreground">+234 901 299 5866</p>
-                    <p className="text-muted-foreground">+234 987 654 3210</p>
+                    <p className="text-muted-foreground">+234 705 139 9129</p>
                   </div>
                 </div>
 
@@ -161,8 +161,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Working Hours</h3>
-                    <p className="text-muted-foreground">Monday - Friday: 9am - 6pm</p>
-                    <p className="text-muted-foreground">Saturday: 10am - 2pm</p>
+                    <p className="text-muted-foreground">24 Hours Service</p>
+                    <p className="text-muted-foreground">Monday - Sunday</p>
                   </div>
                 </div>
               </div>
