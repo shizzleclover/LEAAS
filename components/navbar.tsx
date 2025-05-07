@@ -15,7 +15,7 @@ const navItems = [
   { name: "Packages", href: "/packages" },
   { name: "How We Work", href: "/how-it-works" },
   { name: "Contact", href: "/contact" },
-  { name: "Projects", href: "#"},
+  // { name: "Projects", href: "#"},
 ]
 
 export function Navbar() {
