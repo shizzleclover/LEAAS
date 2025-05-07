@@ -19,8 +19,8 @@ export async function POST(req: Request) {
 
     // Email content
     const mailOptions = {
-      from: 'murewatajala@gmail.com',
-      to: 'murewatajala@gmail.com',
+      from: 'fluxxappmail@gmail.com',
+      to: 'fluxxappmail@gmail.com',
       subject: `LEAAS Contact Form: ${name}`,
       html: `
         <h1>New Contact Form Submission</h1>
