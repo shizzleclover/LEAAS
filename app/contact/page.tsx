@@ -129,7 +129,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-lg">Email</h3>
                     <p className="text-muted-foreground">fluxxappmail@gmail.com</p>
-                    <p className="text-muted-foreground">support@leaas.com</p>
+                  
                   </div>
                 </div>
 
@@ -139,8 +139,46 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">Phone</h3>
-                    <p className="text-muted-foreground">+234 901 299 5866</p>
-                    <p className="text-muted-foreground">+234 705 139 9129</p>
+                    <p className="text-muted-foreground">
+                      <a 
+                        href="https://wa.me/2349012995866" 
+                        className="hover:text-secondary transition-colors hover:underline"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        +234 901 299 5866
+                      </a>
+                    </p>
+                    <p className="text-muted-foreground">
+                      <a 
+                        href="https://wa.me/2347051399129" 
+                        className="hover:text-secondary transition-colors hover:underline"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        +234 705 139 9129
+                      </a>
+                    </p>
+                    <p className="text-muted-foreground">
+                      <a 
+                        href="https://wa.me/2349154368899" 
+                        className="hover:text-secondary transition-colors hover:underline"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        +234 915 436 8899
+                      </a>
+                    </p>
+                    <p className="text-muted-foreground">
+                      <a 
+                        href="https://wa.me/2349067812179" 
+                        className="hover:text-secondary transition-colors hover:underline"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        +234 906 781 2179
+                      </a>
+                    </p>
                   </div>
                 </div>
 
