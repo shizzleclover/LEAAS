@@ -189,7 +189,7 @@ export default function Home() {
             <EnhancedParallax speed={0.2} direction="right" className="lg:w-1/2">
               <div className="brutalist-border overflow-hidden rounded-lg">
                 <Image
-                  src="/network-diagram.png"
+                  src="/home.jpg"
                   alt="Network diagram showing connected development"
                   width={600}
                   height={600}
