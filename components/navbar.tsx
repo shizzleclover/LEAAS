@@ -12,7 +12,7 @@ import { useTheme } from "next-themes"
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Packages", href: "/packages" },
+  { name: "Services", href: "/packages" },
   { name: "How We Work", href: "/how-it-works" },
   { name: "Contact", href: "/contact" },
   // { name: "Projects", href: "#"},
@@ -67,7 +67,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <ModeToggle />
           <Button asChild className="hidden md:inline-flex">
-            <Link href="/contact">Start Your Project</Link>
+            <Link href="/contact">Launch Your Idea</Link>
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -92,7 +92,7 @@ export function Navbar() {
             ))}
             <Button asChild className="w-full">
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                Start Your Project
+                Launch Your Idea
               </Link>
             </Button>
           </div>

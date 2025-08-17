@@ -58,14 +58,14 @@ export default function Home() {
             A SERVICE
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mb-8">
-            Turn your innovative ideas into market-ready products with expert guidance and collaborative development.
+            Your plug-and-play product + engineering team for founders. We turn ideas into working products fast, without the hassle of assembling a full team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="brutalist-border text-lg px-8">
-              <Link href="/packages">View Packages</Link>
+              <Link href="/contact">Get Free Launch Consultation</Link>
             </Button>
             <Button size="lg" variant="outline" className="brutalist-border text-lg px-8">
-              <Link href="/contact">Book Consultation</Link>
+              <Link href="/contact">Launch Your Idea</Link>
             </Button>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-bold mb-4">What We Do</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                We partner with you to build meaningful projects using clean, scalable code while helping you gain valuable development experience.
+                We take your idea through the complete journey: Idea → Product → Market → Growth & Iteration. Think of us as your mini incubator without equity.
               </p>
             </div>
           </ScrollAnimation>
@@ -102,9 +102,9 @@ export default function Home() {
               <div className="bg-primary/10 p-4 rounded-full w-fit mb-4">
                 <Code className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Web Development</h3>
+              <h3 className="text-2xl font-bold mb-2">MVP Development</h3>
               <p className="text-muted-foreground">
-                Full-stack web applications with modern frameworks and responsive design.
+                Turn your idea into a working minimum viable product. Web apps, SaaS platforms, and landing pages ready for market validation.
               </p>
             </TiltCard>
 
@@ -112,19 +112,19 @@ export default function Home() {
               <div className="bg-secondary/10 p-4 rounded-full w-fit mb-4">
                 <Smartphone className="h-8 w-8 text-secondary" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Mobile Apps</h3>
+              <h3 className="text-2xl font-bold mb-2">Product Design</h3>
               <p className="text-muted-foreground">
-                Native and cross-platform mobile applications for Android and iOS.
+                UI/UX design, branding, and launch-ready design systems that make your product stand out in the market.
               </p>
             </TiltCard>
 
             <TiltCard className="brutalist-card p-6 h-full">
               <div className="bg-accent/10 p-4 rounded-full w-fit mb-4">
-                <Cpu className="h-8 w-8 text-accent" />
+                <Rocket className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">AI/ML Projects</h3>
+              <h3 className="text-2xl font-bold mb-2">Launch Support</h3>
               <p className="text-muted-foreground">
-                Machine learning models, data analysis, and AI-powered applications.
+                Pitch decks, launch websites, go-to-market guidance, and everything you need to successfully bring your product to market.
               </p>
             </TiltCard>
 
@@ -132,8 +132,8 @@ export default function Home() {
               <div className="bg-primary/10 p-4 rounded-full w-fit mb-4">
                 <Database className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Backend Systems</h3>
-              <p className="text-muted-foreground">Robust APIs, database design, and server-side architecture.</p>
+              <h3 className="text-2xl font-bold mb-2">Ongoing Development</h3>
+              <p className="text-muted-foreground">Stay on as your fractional tech team for growth, feature additions, and product iteration as you scale.</p>
             </TiltCard>
           </StaggerContainer>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
             <ScrollAnimation animation="fade-in-left" className="lg:w-1/2">
               <h2 className="text-4xl md:text-6xl font-bold mb-6">Why Choose Us?</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                We're not just developers – we're mentors in your development journey. Our team of experts will guide you through creating a project you truly understand and can confidently present.
+                We are your plug-and-play product + dev team. Instead of wasting months hiring, we help you build and launch in weeks, at startup-friendly pricing.
               </p>
 
               <div className="space-y-6">
@@ -155,20 +155,20 @@ export default function Home() {
                     <Users className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1">Team of Mentors</h3>
+                    <h3 className="text-xl font-bold mb-1">Plug-and-Play Team</h3>
                     <p className="text-muted-foreground">
-                      Our team of experienced developers provides both technical expertise and educational guidance.
+                      Skip the hiring hassle. Our experienced team becomes your instant product and engineering department.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="bg-secondary/10 p-3 rounded-full h-fit">
-                    <Lightbulb className="h-6 w-6 text-secondary" />
+                    <Zap className="h-6 w-6 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1">Hands-on Learning</h3>
-                    <p className="text-muted-foreground">We involve you in the development process to ensure you gain valuable skills along the way.</p>
+                    <h3 className="text-xl font-bold mb-1">Build and Launch in Weeks</h3>
+                    <p className="text-muted-foreground">While others spend months assembling teams, we get your product to market fast with proven processes.</p>
                   </div>
                 </div>
 
@@ -177,9 +177,9 @@ export default function Home() {
                     <Rocket className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1">End-to-End Guidance</h3>
+                    <h3 className="text-xl font-bold mb-1">No Hiring Hassle</h3>
                     <p className="text-muted-foreground">
-                      From ideation to deployment, we provide mentorship at every stage of development.
+                      Focus on your business while we handle the technical execution. No recruitment, no management overhead.
                     </p>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-6xl font-bold mb-4">How It Works</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Our collaborative 4-step process to help you bring your ideas to life while building your skills.
+                Our proven 4-step process to turn your idea into a working product and get you to market fast.
               </p>
             </div>
           </ScrollAnimation>
@@ -219,9 +219,9 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
                   1
                 </div>
-                <h3 className="text-2xl font-bold mb-4 mt-6">Consultation</h3>
+                <h3 className="text-2xl font-bold mb-4 mt-6">Discovery</h3>
                 <p className="text-muted-foreground">
-                  We explore your project ideas and discuss how we can collaborate to bring them to life.
+                  We understand your idea, target users, and business goals to create the perfect launch strategy.
                 </p>
               </div>
             </ScrollAnimation>
@@ -231,9 +231,9 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-xl">
                   2
                 </div>
-                <h3 className="text-2xl font-bold mb-4 mt-6">Planning</h3>
+                <h3 className="text-2xl font-bold mb-4 mt-6">Design & Plan</h3>
                 <p className="text-muted-foreground">
-                  Together, we design a project roadmap with learning opportunities built into each milestone.
+                  We create wireframes, choose the tech stack, and plan your MVP with clear milestones and timeline.
                 </p>
               </div>
             </ScrollAnimation>
@@ -243,9 +243,9 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-bold text-xl">
                   3
                 </div>
-                <h3 className="text-2xl font-bold mb-4 mt-6">Development</h3>
+                <h3 className="text-2xl font-bold mb-4 mt-6">Build</h3>
                 <p className="text-muted-foreground">
-                  We code collaboratively, with regular knowledge-sharing sessions to build your skills.
+                  Our team builds your product with regular updates and demos so you see progress every step.
                 </p>
               </div>
             </ScrollAnimation>
@@ -255,9 +255,9 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
                   4
                 </div>
-                <h3 className="text-2xl font-bold mb-4 mt-6">Delivery</h3>
+                <h3 className="text-2xl font-bold mb-4 mt-6">Launch</h3>
                 <p className="text-muted-foreground">
-                  Your project is completed with comprehensive documentation and technical knowledge transfer.
+                  We deploy your product, help with launch strategy, and provide ongoing support as you scale.
                 </p>
               </div>
             </ScrollAnimation>
@@ -276,9 +276,9 @@ export default function Home() {
         <div className="container">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">Our Vision</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">Launch Engine Stats</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                We're on a mission to help startups and businesses build remarkable products while accelerating their market launch.
+                We're the engine that launches ideas into the world. Here's what we've achieved with our founder partners.
               </p>
             </div>
           </ScrollAnimation>
@@ -286,34 +286,34 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ScrollAnimation animation="scale-in" delay={100}>
               <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">100%</div>
-                <h3 className="text-xl font-bold mb-2">Client Satisfaction</h3>
-                <p className="text-muted-foreground">Our commitment to delivering exceptional product experiences.</p>
+                <div className="text-5xl font-bold mb-2 gradient-text">3-6</div>
+                <h3 className="text-xl font-bold mb-2">Weeks to Launch</h3>
+                <p className="text-muted-foreground">Average time from idea to working MVP in the market.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={200}>
               <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">24/7</div>
-                <h3 className="text-xl font-bold mb-2">Support</h3>
-                <p className="text-muted-foreground">Dedicated assistance throughout your product development journey.</p>
+                <div className="text-5xl font-bold mb-2 gradient-text">50+</div>
+                <h3 className="text-xl font-bold mb-2">Products Launched</h3>
+                <p className="text-muted-foreground">Successful products launched by founders using LEAAS.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={300}>
               <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">15+</div>
-                <h3 className="text-xl font-bold mb-2">Industries</h3>
-                <p className="text-muted-foreground">Our expertise spans across various industry sectors.</p>
+                <div className="text-5xl font-bold mb-2 gradient-text">$2M+</div>
+                <h3 className="text-xl font-bold mb-2">Funding Raised</h3>
+                <p className="text-muted-foreground">Total funding raised by founders with products we've built.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={400}>
               <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">15+</div>
-                <h3 className="text-xl font-bold mb-2">Technologies</h3>
+                <div className="text-5xl font-bold mb-2 gradient-text">90%</div>
+                <h3 className="text-xl font-bold mb-2">Launch Success</h3>
                 <p className="text-muted-foreground">
-                  Expertise across a wide range of programming languages and frameworks.
+                  Of our clients successfully launch and validate their product ideas.
                 </p>
               </div>
             </ScrollAnimation>
@@ -326,9 +326,9 @@ export default function Home() {
         <div className="container">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">What We Offer</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">Founder Success Stories</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Here's how we'll help you turn your ideas into successful products.
+                Real founders who launched their ideas into successful products with LEAAS.
               </p>
             </div>
           </ScrollAnimation>
@@ -344,15 +344,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "With LEAAS, you'll get an AI-powered analytics platform that will impress your investors. We prioritize knowledge-sharing throughout the development process."
+                  "LEAAS helped us launch our fintech MVP in just 6 weeks. We went from idea to live product and secured our seed round within 3 months. Their speed was incredible."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-1.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Our Approach</h4>
-                    <p className="text-sm text-muted-foreground">Data-Driven Development</p>
+                    <h4 className="font-bold">Sarah Chen</h4>
+                    <p className="text-sm text-muted-foreground">Founder, PayFlow</p>
                   </div>
                 </div>
               </div>
@@ -368,15 +368,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "The mobile app we'll build with you will exceed your expectations. Our collaborative approach ensures you'll understand the entire codebase and can maintain it after launch."
+                  "Instead of spending months hiring developers, LEAAS became our instant tech team. We validated our idea, got 1000+ users, and raised $500K. Game changer!"
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-2.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Our Promise</h4>
-                    <p className="text-sm text-muted-foreground">Maintainable Code</p>
+                    <h4 className="font-bold">Marcus Johnson</h4>
+                    <p className="text-sm text-muted-foreground">CEO, FitTrack</p>
                   </div>
                 </div>
               </div>
@@ -392,15 +392,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "If you're struggling with your MVP, LEAAS is the answer. We'll deliver a full-stack web app that will help you secure your seed funding round!"
+                  "LEAAS took our e-commerce idea from concept to profitable business in 8 weeks. We're now doing $50K MRR and they continue as our fractional tech team."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-3.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Our Guarantee</h4>
-                    <p className="text-sm text-muted-foreground">Funding-Ready Products</p>
+                    <h4 className="font-bold">Elena Rodriguez</h4>
+                    <p className="text-sm text-muted-foreground">Founder, EcoMarket</p>
                   </div>
                 </div>
               </div>
@@ -435,22 +435,21 @@ export default function Home() {
         <div className="container relative z-20">
           <ScrollAnimation animation="scale-in">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">Ready to Launch Your Next Big Idea?</h2>
+              <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">Ready to Launch Your Idea?</h2>
               <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90 mb-12">
-                Let's turn your concept into a reality. Book a consultation today and take the first step toward 
-                bringing your vision to life!
+                Stop wasting time assembling a team. Let's turn your idea into a working product and get you to market fast!
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button size="lg" variant="secondary" className="brutalist-border text-lg px-8 py-6 text-xl">
-                  <Link href="/packages">View Packages</Link>
+                  <Link href="/packages">View Our Services</Link>
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="brutalist-border text-lg px-8 py-6 text-xl bg-transparent border-white text-white hover:bg-white/10"
                 >
-                  <Link href="/contact">Book Consultation</Link>
+                  <Link href="/contact">Get Free Launch Consultation</Link>
                 </Button>
               </div>
             </div>
