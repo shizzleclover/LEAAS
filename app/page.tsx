@@ -319,88 +319,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Partner Value Section */}
       <section className="py-24">
         <div className="container">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">Founder Stories (Coming Soon)</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">What You Get With LEAAS</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Here are the kinds of outcomes we aim to create with our partners.
+                A product-focused build partner that ships fast and communicates clearly.
               </p>
             </div>
           </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ScrollAnimation animation="fade-in-right" delay={100}>
-              <div className="brutalist-card p-6 h-full">
-                <div className="flex items-center gap-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+            <ScrollAnimation animation="fade-in-up" delay={100}>
+              <div className="brutalist-card p-8 h-full text-center">
+                <div className="bg-primary/10 p-4 rounded-full w-fit mx-auto mb-4">
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "We partnered to move from idea to a working MVP fast—focusing on learning, not vanity metrics."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
-                    <Image src="/network-avatar-1.png" alt="Client" width={48} height={48} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Your Name Here</h4>
-                    <p className="text-sm text-muted-foreground">Future Founder Partner</p>
-                  </div>
-                </div>
+                <h3 className="text-2xl font-bold mb-3">Speed to MVP</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-primary rounded-full"></div>3–6 week delivery targets</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-primary rounded-full"></div>Weekly demos and check‑ins</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-primary rounded-full"></div>Outcome‑aligned scope</li>
+                </ul>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animation="fade-in-right" delay={200}>
-              <div className="brutalist-card p-6 h-full">
-                <div className="flex items-center gap-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+            <ScrollAnimation animation="fade-in-up" delay={200}>
+              <div className="brutalist-card p-8 h-full text-center">
+                <div className="bg-secondary/10 p-4 rounded-full w-fit mx-auto mb-4">
+                  <Users className="h-6 w-6 text-secondary" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "Skipping months of hiring, we treated LEAAS as our plug‑and‑play product team to reach a testable prototype quickly."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
-                    <Image src="/network-avatar-2.png" alt="Client" width={48} height={48} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Future Partner</h4>
-                    <p className="text-sm text-muted-foreground">Early-Stage Founder</p>
-                  </div>
-                </div>
+                <h3 className="text-2xl font-bold mb-3">Plug‑and‑Play Team</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-secondary rounded-full"></div>Product + engineering in one</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-secondary rounded-full"></div>Clear comms, async‑friendly</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-secondary rounded-full"></div>Zero hiring overhead</li>
+                </ul>
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animation="fade-in-right" delay={300}>
-              <div className="brutalist-card p-6 h-full">
-                <div className="flex items-center gap-2 mb-4">
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+            <ScrollAnimation animation="fade-in-up" delay={300}>
+              <div className="brutalist-card p-8 h-full text-center">
+                <div className="bg-accent/10 p-4 rounded-full w-fit mx-auto mb-4">
+                  <Award className="h-6 w-6 text-accent" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "From concept to first users, the focus was on learning fast and iterating with real feedback."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
-                    <Image src="/network-avatar-3.png" alt="Client" width={48} height={48} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">Early Partner</h4>
-                    <p className="text-sm text-muted-foreground">Pre‑Launch Startup</p>
-                  </div>
-                </div>
+                <h3 className="text-2xl font-bold mb-3">Investor‑Ready Launch</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-accent rounded-full"></div>Decks, demos, GTM support</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-accent rounded-full"></div>Clean handover documentation</li>
+                  <li className="flex items-center gap-2 justify-center"><div className="w-1 h-1 bg-accent rounded-full"></div>Post‑launch iteration options</li>
+                </ul>
               </div>
             </ScrollAnimation>
           </div>
