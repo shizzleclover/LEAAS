@@ -276,45 +276,43 @@ export default function Home() {
         <div className="container">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">Launch Engine Stats</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">Launch Readiness Goals</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                We're the engine that launches ideas into the world. Here's what we've achieved with our founder partners.
+                Here are the targets and support you can expect when we partner with founders to launch new products.
               </p>
             </div>
           </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ScrollAnimation animation="scale-in" delay={100}>
-              <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">3-6</div>
-                <h3 className="text-xl font-bold mb-2">Weeks to Launch</h3>
-                <p className="text-muted-foreground">Average time from idea to working MVP in the market.</p>
+              <div className="brutalist-card p-6 text-center h-64 flex flex-col items-center justify-start">
+                <div className="text-4xl leading-tight font-bold mb-2 gradient-text break-words">3-6</div>
+                <h3 className="text-xl font-bold mb-2">Weeks to MVP (Target)</h3>
+                <p className="text-muted-foreground">Typical timeline goal from idea to a working prototype.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={200}>
-              <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">50+</div>
-                <h3 className="text-xl font-bold mb-2">Products Launched</h3>
-                <p className="text-muted-foreground">Successful products launched by founders using LEAAS.</p>
+              <div className="brutalist-card p-6 text-center h-64 flex flex-col items-center justify-start">
+                <div className="text-4xl leading-tight font-bold mb-2 gradient-text break-words">In Progress</div>
+                <h3 className="text-xl font-bold mb-2">Portfolio</h3>
+                <p className="text-muted-foreground">We're actively building demos and early partner projects.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={300}>
-              <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">$2M+</div>
-                <h3 className="text-xl font-bold mb-2">Funding Raised</h3>
-                <p className="text-muted-foreground">Total funding raised by founders with products we've built.</p>
+              <div className="brutalist-card p-6 text-center h-64 flex flex-col items-center justify-start">
+                <div className="text-4xl leading-tight font-bold mb-2 gradient-text break-words">Investor‑Ready</div>
+                <h3 className="text-xl font-bold mb-2">Funding Support</h3>
+                <p className="text-muted-foreground">We prepare decks, demos, and GTM—funding depends on market traction.</p>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animation="scale-in" delay={400}>
-              <div className="brutalist-card p-6 text-center">
-                <div className="text-5xl font-bold mb-2 gradient-text">90%</div>
-                <h3 className="text-xl font-bold mb-2">Launch Success</h3>
-                <p className="text-muted-foreground">
-                  Of our clients successfully launch and validate their product ideas.
-                </p>
+              <div className="brutalist-card p-6 text-center h-64 flex flex-col items-center justify-start">
+                <div className="text-4xl leading-tight font-bold mb-2 gradient-text break-words">Founder‑First</div>
+                <h3 className="text-xl font-bold mb-2">How We Measure</h3>
+                <p className="text-muted-foreground">Ship, learn, iterate. Early-stage success is momentum, not vanity metrics.</p>
               </div>
             </ScrollAnimation>
           </div>
@@ -326,9 +324,9 @@ export default function Home() {
         <div className="container">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-bold mb-4">Founder Success Stories</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-4">Founder Stories (Coming Soon)</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Real founders who launched their ideas into successful products with LEAAS.
+                Here are the kinds of outcomes we aim to create with our partners.
               </p>
             </div>
           </ScrollAnimation>
@@ -344,15 +342,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "LEAAS helped us launch our fintech MVP in just 6 weeks. We went from idea to live product and secured our seed round within 3 months. Their speed was incredible."
+                  "We partnered to move from idea to a working MVP fast—focusing on learning, not vanity metrics."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-1.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Sarah Chen</h4>
-                    <p className="text-sm text-muted-foreground">Founder, PayFlow</p>
+                    <h4 className="font-bold">Your Name Here</h4>
+                    <p className="text-sm text-muted-foreground">Future Founder Partner</p>
                   </div>
                 </div>
               </div>
@@ -368,15 +366,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Instead of spending months hiring developers, LEAAS became our instant tech team. We validated our idea, got 1000+ users, and raised $500K. Game changer!"
+                  "Skipping months of hiring, we treated LEAAS as our plug‑and‑play product team to reach a testable prototype quickly."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-2.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Marcus Johnson</h4>
-                    <p className="text-sm text-muted-foreground">CEO, FitTrack</p>
+                    <h4 className="font-bold">Future Partner</h4>
+                    <p className="text-sm text-muted-foreground">Early-Stage Founder</p>
                   </div>
                 </div>
               </div>
@@ -392,15 +390,15 @@ export default function Home() {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "LEAAS took our e-commerce idea from concept to profitable business in 8 weeks. We're now doing $50K MRR and they continue as our fractional tech team."
+                  "From concept to first users, the focus was on learning fast and iterating with real feedback."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
                     <Image src="/network-avatar-3.png" alt="Client" width={48} height={48} />
                   </div>
                   <div>
-                    <h4 className="font-bold">Elena Rodriguez</h4>
-                    <p className="text-sm text-muted-foreground">Founder, EcoMarket</p>
+                    <h4 className="font-bold">Early Partner</h4>
+                    <p className="text-sm text-muted-foreground">Pre‑Launch Startup</p>
                   </div>
                 </div>
               </div>

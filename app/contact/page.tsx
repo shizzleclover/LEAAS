@@ -149,46 +149,16 @@ export default function ContactPage() {
                         +234 901 299 5866
                       </a>
                     </p>
-                    <p className="text-muted-foreground">
-                      <a
-                        href="https://wa.me/2347051399129"
-                        className="hover:text-secondary transition-colors hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        +234 705 139 9129
-                      </a>
-                    </p>
-                    <p className="text-muted-foreground">
-                      <a
-                        href="https://wa.me/2349154368899"
-                        className="hover:text-secondary transition-colors hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        +234 915 436 8899
-                      </a>
-                    </p>
-                    <p className="text-muted-foreground">
-                      <a
-                        href="https://wa.me/2349067812179"
-                        className="hover:text-secondary transition-colors hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        +234 906 781 2179
-                      </a>
-                    </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div>
                     <h3 className="font-bold text-lg">Location</h3>
                     <p className="text-muted-foreground">Lagos, Nigeria</p>
-                    <p className="text-muted-foreground">(Remote services available nationwide)</p>
+                    <p className="text-muted-foreground">(Remote services available Worldwide)</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start gap-4">
                   <div>

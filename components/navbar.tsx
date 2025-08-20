@@ -13,9 +13,9 @@ import { useTheme } from "next-themes"
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/packages" },
+  { name: "Projects", href: "/projects" },
   { name: "How We Work", href: "/how-it-works" },
   { name: "Contact", href: "/contact" },
-  // { name: "Projects", href: "#"},
 ]
 
 export function Navbar() {

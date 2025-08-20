@@ -27,7 +27,8 @@ const services = [
       "Responsive design for all devices",
       "Launch-ready deployment"
     ],
-    icon: <Globe className="h-8 w-8" />
+    icon: <Globe className="h-8 w-8" />,
+    link: "/services/mvp-development"
   },
   {
     name: "Mobile Apps",
@@ -42,7 +43,8 @@ const services = [
       "Backend integration & APIs"
     ],
     icon: <Rocket className="h-8 w-8" />,
-    popular: true
+    popular: true,
+    link: "/services/mobile-apps"
   },
   {
     name: "Custom Software",
@@ -56,7 +58,23 @@ const services = [
       "Microservices architecture",
       "Enterprise security & scaling"
     ],
-    icon: <Database className="h-8 w-8" />
+    icon: <Database className="h-8 w-8" />,
+    link: "/services/custom-software"
+  },
+  {
+    name: "Custom Pricing",
+    emoji: "🔧",
+    price: "Let's Discuss",
+    description: "Have unique requirements? Let's create a custom solution tailored specifically to your needs and budget.",
+    features: [
+      "Fully customized development approach",
+      "Flexible pricing based on your budget",
+      "Scalable team size and timeline",
+      "Specialized technology requirements",
+      "Enterprise-level support & consulting"
+    ],
+    icon: <Users className="h-8 w-8" />,
+    isCustom: true
   }
 ]
 
@@ -81,38 +99,91 @@ export default function PackagesPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {services.map((service, index) => (
               <div key={service.name} className="h-full">
-                <div className={`brutalist-card p-8 h-full flex flex-col ${service.popular ? "border-primary ring-2 ring-primary/20" : ""} relative`}>
+                <div className={`brutalist-card p-6 h-full flex flex-col ${service.popular ? "border-primary ring-2 ring-primary/20" : ""} ${service.isCustom ? "border-accent ring-2 ring-accent/20" : ""} relative`}>
                   {service.popular && (
-                    <div className="absolute -top-4 right-4 bg-primary text-primary-foreground px-4 py-2 text-sm font-bold rounded-full z-10">
+                    <div className="absolute -top-4 right-4 bg-primary text-primary-foreground px-3 py-1 text-sm font-bold rounded-full z-10">
                       Most Popular
+                    </div>
+                  )}
+                  {service.isCustom && (
+                    <div className="absolute -top-4 right-4 bg-accent text-accent-foreground px-3 py-1 text-sm font-bold rounded-full z-10">
+                      Flexible
                     </div>
                   )}
                   
                   <div className="text-center mb-6">
-                    <div className="text-5xl mb-4">{service.emoji}</div>
-                    <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
-                    <div className="text-2xl font-bold text-primary mb-4">{service.price}</div>
-                    <p className="text-muted-foreground">{service.description}</p>
+                    <div className="text-4xl mb-4">{service.emoji}</div>
+                    <h3 className="text-xl font-bold mb-2">{service.name}</h3>
+                    <div className="text-xl font-bold text-primary mb-4">{service.price}</div>
+                    <p className="text-muted-foreground text-sm">{service.description}</p>
                   </div>
 
-                  <div className="space-y-3 mb-8 flex-grow">
+                  <div className="space-y-2 mb-6 flex-grow">
                     {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
+                      <div key={idx} className="flex items-start gap-2">
+                        <Check className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        <span className="text-xs">{feature}</span>
                       </div>
                     ))}
                   </div>
 
-                  <Button className={`w-full ${service.popular ? "bg-primary" : ""}`} asChild>
-                    <Link href="/contact">Get Free Launch Consultation</Link>
-                  </Button>
+                  <div className="space-y-2">
+                    {service.link && (
+                      <Button variant="outline" className="w-full text-sm" asChild>
+                        <Link href={service.link}>Learn More</Link>
+                      </Button>
+                    )}
+                    <Button className={`w-full text-sm ${service.popular ? "bg-primary" : ""} ${service.isCustom ? "bg-accent" : ""}`} asChild>
+                      <Link href="/contact">Get Free Launch Consultation</Link>
+                    </Button>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Custom Pricing Section */}
+      <section className="py-24">
+        <div className="container">
+          <div className="brutalist-card p-12 max-w-4xl mx-auto text-center">
+            <div className="text-5xl mb-6">🔧</div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Something Different?</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Every startup is unique. If our standard services don't fit your specific needs, let's create a custom solution together.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center">
+                <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-3">
+                  <Users className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-bold mb-2">Flexible Team Size</h3>
+                <p className="text-sm text-muted-foreground">Scale from 1 developer to a full team based on your needs</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-secondary/10 p-3 rounded-full w-fit mx-auto mb-3">
+                  <Clock className="h-6 w-6 text-secondary" />
+                </div>
+                <h3 className="font-bold mb-2">Custom Timeline</h3>
+                <p className="text-sm text-muted-foreground">Work within your launch deadlines and budget constraints</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-accent/10 p-3 rounded-full w-fit mx-auto mb-3">
+                  <Zap className="h-6 w-6 text-accent" />
+                </div>
+                <h3 className="font-bold mb-2">Specialized Tech</h3>
+                <p className="text-sm text-muted-foreground">Unique technology requirements or industry-specific solutions</p>
+              </div>
+            </div>
+
+            <Button size="lg" className="text-lg px-8">
+              <Link href="/contact">Discuss Custom Requirements</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -208,7 +279,7 @@ export default function PackagesPage() {
             <div className="brutalist-card p-6">
               <h3 className="text-xl font-bold mb-2">Do you help with fundraising?</h3>
               <p className="text-muted-foreground">
-                Yes! We create pitch decks, demo videos, and investor-ready products. Many of our clients have successfully raised funding with the products we've built.
+                We help prepare investor‑ready materials (pitch decks, demos, product). Funding outcomes depend on market and traction—no guarantees.
               </p>
             </div>
 

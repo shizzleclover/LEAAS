@@ -34,7 +34,7 @@ export function Footer() {
             )}
           </div>
           <p className="text-muted-foreground">
-            From idea to launch — we help you build innovative products with clean code while providing expert guidance along the way.
+            Your plug-and-play product + engineering team. We turn ideas into working products fast, without the hassle of assembling a full team.
           </p>
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon" asChild>
@@ -69,7 +69,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/packages" className="text-muted-foreground hover:text-foreground">
-                Packages
+                Services
               </Link>
             </li>
             <li>
@@ -85,31 +85,31 @@ export function Footer() {
           </ul>
         </div>
         <div className="space-y-4">
-          <h4 className="font-bold">Services</h4>
+          <h4 className="font-bold">Our Services</h4>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                Web Development
+              <Link href="/services/mvp-development" className="text-muted-foreground hover:text-foreground">
+                MVP Development
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                Mobile Development
+              <Link href="/services/mobile-apps" className="text-muted-foreground hover:text-foreground">
+                Mobile Apps
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                AI/ML Projects
+              <Link href="/services/custom-software" className="text-muted-foreground hover:text-foreground">
+                Custom Software
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                Backend Development
+              <Link href="/contact" className="text-muted-foreground hover:text-foreground">
+                Launch Support
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">
-                Technical Mentorship
+              <Link href="/contact" className="text-muted-foreground hover:text-foreground">
+                Ongoing Development
               </Link>
             </li>
           </ul>
